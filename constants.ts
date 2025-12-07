@@ -13,8 +13,8 @@ export const COLORS = {
 // NOTE: You must replace these with your own Client ID and API Key from Google Cloud Console.
 // Enable "Google Calendar API" in your library.
 export const GOOGLE_CALENDAR_CONFIG = {
-  apiKey: process.env.GOOGLE_API_KEY || 'YOUR_GOOGLE_API_KEY_HERE',
-  clientId: process.env.GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID_HERE',
+  apiKey: process.env.GOOGLE_API_KEY || 'AIzaSyBjzfD0JEP1X_kH46Oc9_C7hnvIjcI80k',
+  clientId: process.env.GOOGLE_CLIENT_ID || '373251942454-avzgra32am4gd6l456ivkck5qf1e70aq.apps.googleusercontent.com',
   discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
   scopes: "https://www.googleapis.com/auth/calendar.events",
 };
