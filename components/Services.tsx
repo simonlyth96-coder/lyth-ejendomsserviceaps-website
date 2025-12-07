@@ -34,8 +34,6 @@ const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
             <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
             <p className="text-[#B0C4BB] text-sm leading-relaxed mb-6">{service.desc}</p>
             
-            <div className="flex items-center text-white/50 text-sm font-semibold group-hover:text-white transition-colors">
-                Se billeder & detaljer <ChevronRight size={16} className="ml-1" />
             </div>
           </div>
         ))}
