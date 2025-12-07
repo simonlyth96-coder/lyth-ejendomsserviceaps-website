@@ -33,7 +33,6 @@ const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
             
             <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
             <p className="text-[#B0C4BB] text-sm leading-relaxed mb-6">{service.desc}</p>
-            
             </div>
           </div>
         ))}
