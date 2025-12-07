@@ -1,0 +1,7 @@
+{
+  "name": "Lyth Ejendomsservice",
+  "description": "Next-generation property service management with AI-powered voice booking.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
