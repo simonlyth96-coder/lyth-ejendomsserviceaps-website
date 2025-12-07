@@ -14,7 +14,7 @@ export const COLORS = {
 // Enable "Google Calendar API" in your library.
 export const GOOGLE_CALENDAR_CONFIG = {
   apiKey: process.env.GOOGLE_API_KEY || 'AIzaSyAly7tkcEYvsZPZGBfUavLdFVvyutG0uIk',
-  clientId: process.env.GOOGLE_CLIENT_ID || '577147986442-v9ct40t5i52589nffflck9rche9q2vkq.apps.googleusercontent.com,  discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+  clientId: process.env.GOOGLE_CLIENT_ID || '577147986442-v9ct40t5i52589nffflck9rche9q2vkq.apps.googleusercontent.com',  discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
   scopes: "https://www.googleapis.com/auth/calendar.events",
 };
 
