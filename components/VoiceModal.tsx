@@ -12,14 +12,13 @@ interface VoiceModalProps {
 const VoiceModal: React.FC<VoiceModalProps> = ({ isOpen, onClose, onBookingFound }) => {
   const [isRecording, setIsRecording] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [statusText, setStatusText] = useState("Klar til at lytte...");
-  
+  const [statusText, setStatusText] = useState("Klik på knappen for at starte optagelse...");  
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
 
   useEffect(() => {
     if (isOpen) {
-      startRecording();
+//      startRecording();
     } else {
       stopRecordingCleanup();
     }
