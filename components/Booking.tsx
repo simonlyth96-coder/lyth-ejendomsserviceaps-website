@@ -102,7 +102,7 @@ const Booking: React.FC<BookingProps> = ({ initialData }) => {
           
     // Send webhook notification
     try {
-      await fetch('https://lythejendomsservice.com/api/booking-webhook', {
+      await fetch('/api/booking-webhook', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
