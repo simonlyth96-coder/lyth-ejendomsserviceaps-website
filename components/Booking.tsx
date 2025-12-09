@@ -288,7 +288,7 @@ const Booking: React.FC<BookingProps> = ({ initialData }) => {
             </div>
 
             <div className="grid grid-cols-7 gap-2 mb-8">
-                {[29,30,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,1,2].map((day, idx) => {
+                {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31].map((day, idx) => {
                     const isCurrentMonth = idx > 1 && idx < 33;
                     const isSelected = selectedDay === day && isCurrentMonth;
                     
