@@ -100,6 +100,10 @@ const Booking: React.FC<BookingProps> = ({ initialData }) => {
             alert("Booking oprettet lokalt, men kunne ikke synkronisere til kalender.");
         }
           
+    } else {
+        alert(`Booking anmodning sendt for ${formData.service || 'service'}! \nTak fordi du valgte Lyth Ejendomsservice.`);
+    }
+
     // Send webhook notification
     try {
       await fetch('/api/booking-webhook', {
@@ -110,9 +114,7 @@ const Booking: React.FC<BookingProps> = ({ initialData }) => {
     } catch (webhookErr) {
       console.warn('Webhook notification failed:', webhookErr);
     }
-    } else {
-        alert(`Booking anmodning sendt for ${formData.service || 'service'}! \nTak fordi du valgte Lyth Ejendomsservice.`);
-    }
+    
 
     // Reset form
     setFormData({
