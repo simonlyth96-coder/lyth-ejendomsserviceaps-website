@@ -18,6 +18,9 @@ export const GOOGLE_CALENDAR_CONFIG = {
   scopes: "https://www.googleapis.com/auth/calendar.events",
 };
 
+// Google Calendar iCal URL
+export const CALENDAR_ICAL_URL = 'https://calendar.google.com/calendar/ical/lythejendomsservice%40gmail.com/private-f187ad2a0dfcf499d609137707b48e09/basic.ics';
+
 export const SERVICES_LIST = [
   { 
     id: ServiceType.CARPENTRY, 
